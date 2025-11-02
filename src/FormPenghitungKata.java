@@ -344,9 +344,9 @@ private void clearAll() {
 
         panelHeader = new javax.swing.JPanel();
         lblJudul = new javax.swing.JLabel();
+        panelCenter = new javax.swing.JPanel();
         scrollInput = new javax.swing.JScrollPane();
         txtInput = new javax.swing.JTextArea();
-        panelCenter = new javax.swing.JPanel();
         panelBottom = new javax.swing.JPanel();
         panelStatistik = new javax.swing.JPanel();
         lblTextKata = new javax.swing.JLabel();
@@ -376,6 +376,8 @@ private void clearAll() {
 
         getContentPane().add(panelHeader, java.awt.BorderLayout.NORTH);
 
+        panelCenter.setLayout(new java.awt.BorderLayout());
+
         scrollInput.setColumnHeader(null);
         scrollInput.setColumnHeaderView(null);
 
@@ -387,9 +389,8 @@ private void clearAll() {
         txtInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         scrollInput.setViewportView(txtInput);
 
-        getContentPane().add(scrollInput, java.awt.BorderLayout.CENTER);
+        panelCenter.add(scrollInput, java.awt.BorderLayout.CENTER);
 
-        panelCenter.setLayout(new java.awt.BorderLayout());
         getContentPane().add(panelCenter, java.awt.BorderLayout.CENTER);
 
         panelBottom.setLayout(new java.awt.BorderLayout());
